@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pizzaria.css">
+    <link rel="shortcut icon" href="midias/Steve_Pizza.ico" type="image/x-icon">
+    <title>Pedidos</title>
+</head>
+<body>
+   <header class="navbar">
+    <nav>
+        <ul class="ul">
+            <li><img src="midias/logo.jpg" alt="Logo" width="90" style="margin-right: 20px;"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="promocoes.html">Promoção</a></li>
+            <li><a href="pedido.html">Fazer Pedido</a></li>
+            <li><a href="local.html">Lojas</a></li>
+        </ul>  
+    </header>
+    <main>
+        <div id="galeria">
+            <div id="fotos">
+                <img id="img" src="https://iso.500px.com/wp-content/uploads/2018/02/500px_blog_national_pizza_day.jpg" alt="imagem de uma pizza">
+                <img id="img" src="https://img.freepik.com/vetores-gratis/fundo-do-quadro-negro-com-pizza_23-2148907816.jpg" alt="imagem de uma pizza">
+                <img id="img" src="https://www.reemaq.com.br/wp-content/uploads/2022/09/vale-a-pena-pizzaria-delivery.jpg" alt="">
+                <img id="img" src="https://sischef.com/wp-content/uploads/2023/05/pexels-pixabay-280453-1-2048x1365.jpg" alt="">
+            </div>
+        </div>
+        <section class="pedidos">
+            <h1>Faça aqui seu pedido!</h1>
+            <p>Só na nossa pizzaria, você encontra as melhores opções e personalizada do seu jeito!</p>
+
+            <form action="" method="post">
+                <label for="nome">Digite aqui seu nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">Digite aqui seu email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Digite aqui seu número de telefone:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <label for="sabores">Escolha o sabor:</label>
+                <select name="sabores" id="sabores" required>
+                    <option value="calabresa">Calabresa</option>
+                    <option value="frango">Frango</option>
+                    <option value="frango_c">Frango com catupiry</option>
+                    <option value="Carne">Carne de sol</option>
+                </select><br><br>
+
+                
+                <label>Ingredientes extras:</label><br>
+                <div class="ingredientes-extras">
+                    <div>
+                        <input type="checkbox" id="cebola" name="interests" value="Cebola" >
+                        <label for="tech">Cebola</label><br>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="cogumelo" name="interests" value="Cogumelo" >
+                        <label for="business">Cogumelo</label><br>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="tomate" name="interests" value="Tomate" >
+                        <label for="business">Tomate</label><br>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="molho" name="interests" value="Molho" >
+                        <label for="business">Molho</label><br>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="azeitona" name="interests" value="Azeitona" >
+                        <label for="design">Azeitona</label><br><br>
+                    </div>
+                </div>
+                <label for="tamanho">Escolha o tamanho:</label>
+                <select name="tamanho" id="tamanho" required>
+                    <option value="p">P</option>
+                    <option value="m">M</option>
+                    <option value="g">G</option>
+                </select><br><br>
+
+                <label for="message"> Adicionais (opcional):</label><br>
+                <textarea id="message" name="message"></textarea><br><br>
+
+                <label for="sabores">Escolha a forma de pagamento:</label>
+                <select name="pagamento" id="pagamento" required>
+                    <option value="pix">Pix</option>
+                    <option value="Cartão">Cartão</option>
+                    <option value="vista">A vista</option>
+                </select><br><br>
+
+                <button class="button button1">Fazer pedido</button>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        
+        <a href="promocoes.html">Contato </a><br>
+        <a href="pedido.html">Trabalhe Conosco </a>
+        <p>&copy; Copyright 2024 AVANTI - Equipe 3 | Anderson - Ivan - Janderson - </p><br><br><br>
+        
+    </footer>
+</body>
+</html>
