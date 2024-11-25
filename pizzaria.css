@@ -1,4 +1,4 @@
-*/ Remover margens e preenchimentos padrão do body, liner-gradiente para criar um efeito de transição suave entre duas ou mais cores. */
+*/ Remover margens e preenchimentos padrao do body, liner-gradiente para criar um efeito de transição suave entre duas ou mais cores. */
 body {
     margin: 0;
     padding: 0;
