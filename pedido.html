@@ -1,47 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Configuração de codificação e responsividade -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link para o arquivo de estilos e ícone da página -->
     <link rel="stylesheet" href="pizzaria.css">
     <link rel="shortcut icon" href="midias/Steve_Pizza.ico" type="image/x-icon">
+    
+    <!-- Título da página -->
     <title>Pedidos</title>
 </head>
 <body>
-   <header class="navbar">
-    <nav>
-        <ul class="ul">
-            <li><img src="midias/logo.jpg" alt="Logo" width="90" style="margin-right: 20px;"></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cardapio.html">Cardápio</a></li>
-            <li><a href="promocoes.html">Promoção</a></li>
-            <li><a href="pedido.html">Fazer Pedido</a></li>
-            <li><a href="local.html">Lojas</a></li>
-        </ul>  
+    <!-- Cabeçalho com barra de navegação -->
+    <header class="navbar">
+        <nav>
+            <ul class="ul">
+                <!-- Logo da pizzaria -->
+                <li><img src="midias/logo.jpg" alt="Logo" width="90" style="margin-right: 20px;"></li>
+                
+                <!-- Links principais do site -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="promocoes.html">Promoção</a></li>
+                <li><a href="pedido.html">Fazer Pedido</a></li>
+                <li><a href="local.html">Lojas</a></li>
+            </ul>  
+        </nav>
     </header>
+    
+    <!-- Conteúdo principal -->
     <main>
+        <!-- Galeria de imagens -->
         <div id="galeria">
             <div id="fotos">
+                <!-- Imagens de pizzas -->
                 <img id="img" src="https://iso.500px.com/wp-content/uploads/2018/02/500px_blog_national_pizza_day.jpg" alt="imagem de uma pizza">
                 <img id="img" src="https://img.freepik.com/vetores-gratis/fundo-do-quadro-negro-com-pizza_23-2148907816.jpg" alt="imagem de uma pizza">
                 <img id="img" src="https://www.reemaq.com.br/wp-content/uploads/2022/09/vale-a-pena-pizzaria-delivery.jpg" alt="">
                 <img id="img" src="https://sischef.com/wp-content/uploads/2023/05/pexels-pixabay-280453-1-2048x1365.jpg" alt="">
             </div>
         </div>
+        
+        <!-- Seção de formulário para pedidos -->
         <section class="pedidos">
             <h1>Faça aqui seu pedido!</h1>
-            <p>Só na nossa pizzaria, você encontra as melhores opções e personalizada do seu jeito!</p>
-
+            <p>Só na nossa pizzaria, você encontra as melhores opções e personaliza do seu jeito!</p>
+            
+            <!-- Formulário de pedido -->
             <form action="" method="post">
+                <!-- Entrada para nome -->
                 <label for="nome">Digite aqui seu nome:</label>
                 <input type="text" id="nome" name="nome" required><br><br>
-
+                
+                <!-- Entrada para e-mail -->
                 <label for="email">Digite aqui seu email:</label>
                 <input type="email" id="email" name="email" required><br><br>
-
+                
+                <!-- Entrada para telefone -->
                 <label for="phone">Digite aqui seu número de telefone:</label>
                 <input type="tel" id="phone" name="phone" required><br><br>
-
+                
+                <!-- Seletor de sabor -->
                 <label for="sabores">Escolha o sabor:</label>
                 <select name="sabores" id="sabores" required>
                     <option value="calabresa">Calabresa</option>
@@ -49,63 +70,66 @@
                     <option value="frango_c">Frango com catupiry</option>
                     <option value="Carne">Carne de sol</option>
                 </select><br><br>
-
                 
+                <!-- Opções de ingredientes extras -->
                 <label>Ingredientes extras:</label><br>
                 <div class="ingredientes-extras">
                     <div>
-                        <input type="checkbox" id="cebola" name="interests" value="Cebola" >
-                        <label for="tech">Cebola</label><br>
+                        <input type="checkbox" id="cebola" name="interests" value="Cebola">
+                        <label for="cebola">Cebola</label><br>
                     </div>
-
                     <div>
-                        <input type="checkbox" id="cogumelo" name="interests" value="Cogumelo" >
-                        <label for="business">Cogumelo</label><br>
+                        <input type="checkbox" id="cogumelo" name="interests" value="Cogumelo">
+                        <label for="cogumelo">Cogumelo</label><br>
                     </div>
-
                     <div>
-                        <input type="checkbox" id="tomate" name="interests" value="Tomate" >
-                        <label for="business">Tomate</label><br>
+                        <input type="checkbox" id="tomate" name="interests" value="Tomate">
+                        <label for="tomate">Tomate</label><br>
                     </div>
-
                     <div>
-                        <input type="checkbox" id="molho" name="interests" value="Molho" >
-                        <label for="business">Molho</label><br>
+                        <input type="checkbox" id="molho" name="interests" value="Molho">
+                        <label for="molho">Molho</label><br>
                     </div>
-
                     <div>
-                        <input type="checkbox" id="azeitona" name="interests" value="Azeitona" >
-                        <label for="design">Azeitona</label><br><br>
+                        <input type="checkbox" id="azeitona" name="interests" value="Azeitona">
+                        <label for="azeitona">Azeitona</label><br><br>
                     </div>
                 </div>
+                
+                <!-- Seletor de tamanho da pizza -->
                 <label for="tamanho">Escolha o tamanho:</label>
                 <select name="tamanho" id="tamanho" required>
                     <option value="p">P</option>
                     <option value="m">M</option>
                     <option value="g">G</option>
                 </select><br><br>
-
-                <label for="message"> Adicionais (opcional):</label><br>
+                
+                <!-- Campo para observações adicionais -->
+                <label for="message">Adicionais (opcional):</label><br>
                 <textarea id="message" name="message"></textarea><br><br>
-
-                <label for="sabores">Escolha a forma de pagamento:</label>
+                
+                <!-- Seletor de forma de pagamento -->
+                <label for="pagamento">Escolha a forma de pagamento:</label>
                 <select name="pagamento" id="pagamento" required>
                     <option value="pix">Pix</option>
                     <option value="Cartão">Cartão</option>
-                    <option value="vista">A vista</option>
+                    <option value="vista">À vista</option>
                 </select><br><br>
-
+                
+                <!-- Botão para enviar o pedido -->
                 <button class="button button1">Fazer pedido</button>
-
             </form>
         </section>
     </main>
+    
+    <!-- Rodapé do site -->
     <footer>
+        <!-- Links úteis -->
+        <a href="promocoes.html">Contato</a><br>
+        <a href="pedido.html">Trabalhe Conosco</a>
         
-        <a href="promocoes.html">Contato </a><br>
-        <a href="pedido.html">Trabalhe Conosco </a>
-        <p>&copy; Copyright 2024 AVANTI - Equipe 3 | Anderson - Ivan - Janderson - </p><br><br><br>
-        
+        <!-- Direitos autorais -->
+        <p>&copy; Copyright 2024 AVANTI - Equipe 3 | Anderson - Ivan - Janderson- ismael </p><br><br><br>
     </footer>
 </body>
 </html>
